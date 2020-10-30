@@ -23,16 +23,17 @@ int main() {
 		value1 = Function1(x1);
 		d_value = value2 - value1;
 		if (d_value <= 0) {
-			std::cout << N << ") ";
+			std::cout << N << ") |";
 			value_min = value2;
 			x_min = x2;
 			x1 = rand() % 3000;
 			x1 = x1 / 1000;
-			std::cout << T_max << "  ||  ";
+			std::cout << T_max << " | ";
 			T_max = T_max * 0.95;
 			N = N + 1;
-			std::cout << x2 << "  ||  ";
+			std::cout << x2 << " | ";
 			std::cout << value_min << std::endl;
+			std::cout << "---------------------------------------------------------" << std::endl;
 		}
 		else {
 			x1 = rand() % 3000;
